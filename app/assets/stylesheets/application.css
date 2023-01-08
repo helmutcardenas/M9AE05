@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+.container{
+    color: #BFBFBF ; 
+}
+
+html{
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav{
+    color: #BFBFBF;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+}
+
+h1{
+    color: #595959;
+    font-family: 'Roboto Mono', monospace;
+}
