@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Labels</h1>
+<%= link_to "New label", new_label_path, class:"btn btn-primary" %>
+<hr>
+<div id="labels">
+  <% @labels.each do |label| %>
+      <%= render label %>
+      <%= link_to "Show this label", label, class:"btn btn-info" %>
+  <hr>
+  <% end %>
+</div>

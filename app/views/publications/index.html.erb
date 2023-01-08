@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Publications</h1>
+<%= link_to "New publication", new_publication_path, class:"btn btn-primary" %>
+<hr>
+<div id="publications">
+  <% @publications.each do |publication| %>
+    <%= render publication %>
+    <p>
+      <%= link_to "Show this publication", publication, class:"btn btn-info" %>
+    </p>
+  <% end %>
+</div>

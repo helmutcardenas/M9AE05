@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+<h1>Brands</h1>
+<%= link_to "New brand", new_brand_path, class:"btn btn-primary" %>
+<hr>
+<div class="list-group" id="brands">
+ <% @brands.each do |brand| %>
+  <a href="#" class="list-group-item list-group-item-action">
+    <%= render brand %>
+    <%= link_to "Show this brand", brand %>
+  </a>
+  <hr>
+  <% end %>
+</div>

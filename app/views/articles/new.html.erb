@@ -1,0 +1,39 @@
+<h1>New article</h1>
+  <%= link_to "Back to articles", articles_path %>
+<hr>
+<%= render "form", article: @article %>
+
+<h1>New Article</h1>
+<hr>
+<div class="container text-center col-md-8">
+  <div class="row">
+  <form>
+  <!-- Grid -->
+  <div class="col-md-12">
+  <label class="form-label" for="Title">Title</label>
+  <input class="form-control" type="text" id="Title" name="Title" placeholder="Title of the article" required>
+  </div>
+  <div class="col-md-12 g-3">
+    <label class="form-label" for="Body">Body of the article</label>
+    <textarea  class="form-control" name="textarea"></textarea>
+  </div>
+    <hr>
+  <div class="col-md-12 g-3">
+    <label class="form-label" for="link">link article</label>
+    <input class="form-control" type="text" id="link" name="link" placeholder="link article" required>
+    <p><small>references about this article.</small></p>
+  </div>
+  <div class="col-md-8">
+    <label class="form-label" for="allowedunits">Select types articles to set:</label><select class="form-control" id="allowedunits" name="allowedunits" multiple>
+    <option value="1" selected> Deportes </option>
+    <option value="2" selected> Farándula </option>
+    <option value="3" selected> Nacional </option>
+    <option value="4" selected> Internacional </option>
+    <option value="5" selected> Política </option>
+  </select><small>* can select more than one type of article.</small>
+  </div>
+  <!-- Button -->
+   <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
