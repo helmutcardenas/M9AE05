@@ -13,12 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+*{
+    padding: 0;
+    margin: 0;
+    margin: auto;
+}
+
 .container{
     color: #BFBFBF ; 
+    display: grid;
 }
 
 html{
     font-family: 'Roboto Mono', monospace;
+    display: grid;
+    margin: auto;
 }
 
 nav{
@@ -30,9 +40,32 @@ nav{
 h1{
     color: #595959;
     font-family: 'Roboto Mono', monospace;
+    display: grid;
 }
 
 h2{
     color: #595959;
     font-family: 'Roboto Mono', monospace;
+    display: grid;
+}
+
+li{
+    color: #595959;
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+}
+
+footer{
+    color: #F2F2F2;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #595959;
+    align-items: center;
+    padding: 35px;
+    font-size: 20px;
+    display: grid;
+}
+
+img{
+    margin: auto;
+    border-radius: 10px;
 }
